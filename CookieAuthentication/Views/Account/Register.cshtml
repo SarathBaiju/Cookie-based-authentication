@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <h2><strong>Register </strong></h2><br />
+            <form asp-action="register" method="post">
+                <div class="form-group">
+                    <label>User Name</label>
+                    <input type="text" class="form-control" id="userName" name="userName" placeholder="Enter user name">
+                    <label>Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+                </div>
+                
+                <div class="form-check">
+                    <button class="btn btn-info" type="reset">Reset</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

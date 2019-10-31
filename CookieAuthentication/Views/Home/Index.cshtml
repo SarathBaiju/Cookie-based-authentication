@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var role = User.FindFirst(claim => claim.Type == System.Security.Claims.ClaimTypes.Role)?.Value;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @User.Identity.Name Role: @role</h1>
+    <div id="Logout">
+        <form action="/Account/Logout" method="post">
+            <button type="submit" class="btn btn-danger" style="margin-left:0px">Logout</button>
+        </form>
+    </div>
+    @if (role == EnumTypes.Roles.Admin.ToString())
+    {
+        <form asp-action="roleAdd" asp-controller="Role" method="get">
+            <button type="submit" class="btn btn-primary">add-role</button>
+        </form>
+    }
+</div>

@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "RoleAdd";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <h2><strong>Role Add</strong></h2><br />
+            <form asp-action="RoleAdd" method="post">
+                <div class="form-group">
+                    <label>Role Name</label>
+                    <input type="text" class="form-control" id="roleName" name="roleName" placeholder="Enter role name">
+                </div>
+
+                <div class="form-check">
+                    <button class="btn btn-info" type="reset">Reset</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
