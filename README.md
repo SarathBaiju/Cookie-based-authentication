@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/SarathBaijuPit/RepositoryPatternDemo/_apis/build/status/SarathBaiju.Cookie-based-authentication?branchName=master)](https://dev.azure.com/SarathBaijuPit/RepositoryPatternDemo/_build/latest?definitionId=2&branchName=master)
 # Cookie-based-authentication
 This application demonstrating about authentication and authorization using cookies.
  * in  simple words, authentication check whether a user is valid or not(Registered or not)
